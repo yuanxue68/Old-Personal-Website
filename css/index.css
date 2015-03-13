@@ -1,23 +1,32 @@
 body {
 	width:100%;
+	height: 100%;
 	padding:0;
 	margin:0;
-	background: #71bbd7;
 	text-align: center;
 }
 
 .first {
-	min-height: 476px
-	overflow:auto;
-	font-family: Helvetica, Arial, sans-serif;
+	min-height: 476px;
+	display: table;
+	height: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 4em;
+	text-align: center;
+	width: 100%;
 }
 
-.content {
+.content_container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.content{
 	max-width: 480px;
 	padding: 0px 20px;
-	display: block;
 	margin: 5% auto 4%;
-	border: 1px solid #000000;
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
