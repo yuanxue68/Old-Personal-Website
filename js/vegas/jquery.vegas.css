@@ -8,7 +8,7 @@
 .vegas-background {
 	-ms-interpolation-mode: bicubic;
 	image-rendering: optimizeQuality;
-    max-width: none !important; /* counteracts global img modification by twitter bootstrap library */
+    max-width: none !important; 
 	z-index: -2;
 }
 

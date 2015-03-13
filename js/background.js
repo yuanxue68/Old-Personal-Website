@@ -7,6 +7,5 @@ $(function() {
 		preload: true
 	});
 	$.vegas('overlay', {
-		src:'js/vegas/overlays/01.png'
 	});
 });

@@ -58,13 +58,12 @@ body {
 	text-transform: uppercase;
 	padding-top: 10px;
 	margin-bottom: 25px;
-	font-size: 25px;
 	font: 2.5em "Roboto Condensed", sans-serif;
+
 }
 
 .introduction {
 	color:white;
-	font-size: 15px;
 	text-transform: uppercase;
 	font: 2em "Roboto Condensed", sans-serif;
 }
