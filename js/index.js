@@ -30,5 +30,5 @@ jQuery(document).ready(function($){
 function scrollToTimeline() {
 	$(document.body).animate({
 	    'scrollTop':   $('#aboutme').offset().top
-	}, 1000);
+	}, 700);
 }

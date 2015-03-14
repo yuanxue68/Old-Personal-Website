@@ -34,8 +34,11 @@ body {
 	overflow: hidden;
 }
 
+
 .experience{
-	background-color: #CFD6FA;
+	background-color: #799EEF;
+	color:#fff;
+	font-family: "Open Sans","Helvetica Neue Thin",HelveticaNeue-Thin,"helvetica neue",helvetica,arial,"lucida grande",sans-serif
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -45,18 +48,19 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	font-family: Montserrat,"Helvetica Neue",Arial,sans-serif;
+	font-weight: 700;
 	font-size: 4em;
 	padding: 40px;
 }
 
-.experiencelist{
+.expcontainer{
 	min-height: 100%;
 	width:1000px;
 	margin: auto;
 	text-align: left;
 }
 
-.workplace :hover{
+.workplace:hover{
 	border-radius: 10px;
 	background-color: #49a1a7;
 	-webkit-transform: translateX(5px);
@@ -73,28 +77,35 @@ body {
 .icon{
 	max-width:100%;
 	max-height:100%;
+	border-radius: 20px;
 }
 
 .descriptionarea{
 	text-align: left;
 	float: left;
 	width: 760px;
+	padding-top: 30px;
 	padding-left: 20px;
 	padding-bottom: 30px;
 }
 
 .titlearea .jobtitle{
 	font-weight: 700;
-	font-size: 0.5em;
+	float: left;
+	font-size: 26px;
 }
 
 .titlearea .time{
-	font-size: 0.4em;
-	text-align: right;
+	padding-top: 7px;
+	padding-right: 10px;
+	float: right;
+	font-size: 18px;
 }
 
 .description li{
-	font-size: 0.4em;
+	margin-top: 20px;
+	padding: 0;
+	font-size: 18px;
 	text-align: left;
 }
 
@@ -152,7 +163,6 @@ body {
 	padding-top: 10px;
 	margin-bottom: 25px;
 	font: 2.5em "Roboto Condensed", sans-serif;
-
 }
 
 .introduction {
@@ -255,9 +265,5 @@ ul.social_bar a:hover {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
 }
-
-
-
-
 
 
