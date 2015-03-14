@@ -7,6 +7,8 @@ body {
 	text-align: center;
 }
 
+
+
 .arrow{
  	background: url('arrow.jpg');
   	background-size: 30px 30px;
@@ -28,7 +30,6 @@ body {
 }
 
 .aboutme {
-	min-height: 400px;
 	background-color:white;
 	margin: 0 auto;
 	overflow: hidden;
@@ -36,7 +37,6 @@ body {
 
 .aboutmecontainer{
 	min-height: 100%;
-	width: 1000px;
 	margin: auto;
 	text-align: left;
 }
@@ -52,7 +52,6 @@ body {
 }
 
 .bio{
-	max-width: 800px;
 	text-align: center;
 	font-family: "Open Sans","Helvetica Neue Thin",HelveticaNeue-Thin,"helvetica neue",helvetica,arial,"lucida grande",sans-serif;
 	margin: 0 auto;
@@ -60,6 +59,7 @@ body {
 	font-weight: 700;
 	padding: 30px;
 	line-height: 2;
+	max-width: 900px;
 }
 
 .experience{
@@ -82,7 +82,7 @@ body {
 
 .expcontainer{
 	min-height: 100%;
-	width:1000px;
+	max-width:1000px;
 	margin: auto;
 	text-align: left;
 }
@@ -110,7 +110,7 @@ body {
 .descriptionarea{
 	text-align: left;
 	float: left;
-	width: 760px;
+	max-width: 760px;
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-bottom: 30px;
