@@ -1,10 +1,103 @@
 body {
 	width:100%;
 	height: 100%;
+	max-height: 100%;
 	padding:0;
 	margin:0;
 	text-align: center;
 }
+
+.arrow{
+ 	background: url('arrow.jpg');
+  	background-size: 30px 30px;
+  	width: 30px;
+  	height: 30px;
+  	cursor: pointer;
+  	position:absolute;
+  	bottom:20px;
+  	left: 49%;
+  	-webkit-animation:bounce 2s infinite;
+}
+
+.footer{
+	padding: 25px;
+	height: 100px;
+	background-color:#434242;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.aboutme {
+	min-height: 400px;
+	background-color:white;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.experience{
+	background-color: #CFD6FA;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.title{
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Montserrat,"Helvetica Neue",Arial,sans-serif;
+	font-size: 4em;
+	padding: 40px;
+}
+
+.experiencelist{
+	min-height: 100%;
+	width:1000px;
+	margin: auto;
+	text-align: left;
+}
+
+.workplace :hover{
+	border-radius: 10px;
+	background-color: #49a1a7;
+	-webkit-transform: translateX(5px);
+	-ms-transform: translateX(5px);
+	transform: translateX(5px);
+}
+
+.companyicon{
+	float: left;
+	width:200px;
+	height: 200px;
+	padding: 20px;
+}
+.icon{
+	max-width:100%;
+	max-height:100%;
+}
+
+.descriptionarea{
+	text-align: left;
+	float: left;
+	width: 760px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+.titlearea .jobtitle{
+	font-weight: 700;
+	font-size: 0.5em;
+}
+
+.titlearea .time{
+	font-size: 0.4em;
+	text-align: right;
+}
+
+.description li{
+	font-size: 0.4em;
+	text-align: left;
+}
+
 
 .first {
 	min-height: 476px;
@@ -128,6 +221,43 @@ ul.social_bar a:hover {
 	color: #ffffff;
 	-webkit-transition: all 0.2s ease-in-out; 
 }
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url("cd-top-arrow.svg") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+
+
 
 
 
