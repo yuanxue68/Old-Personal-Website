@@ -273,10 +273,10 @@ ul.social_bar a:hover {
 	position: relative;
 	width: 100%;
 	border-radius: 5px;
-	-webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
 }
 
 .projectpic{
@@ -292,12 +292,9 @@ ul.social_bar a:hover {
   	color: white; 
   	height: 60%;
 
-  	opacity: 0;
+  	opacity: 1;
   	left: 0;
-  	bottom: -60%;
-  	-webkit-transition: all 0.3s;
-  	-moz-transition:    all 0.3s;
-  	-o-transition:      all 0.3s;
+  	bottom: 0;
 }
 
 .ptitle{
@@ -305,10 +302,6 @@ ul.social_bar a:hover {
 	font-weight: 700;
 }
 
-.project:hover .caption{
-  	opacity: 1;
-  	bottom: 0;
-}
 
 /* otheres */
 
