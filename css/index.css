@@ -249,6 +249,7 @@ ul.social_bar a:hover {
 	font-family: "Open Sans","Helvetica Neue Thin",HelveticaNeue-Thin,"helvetica neue",helvetica,arial,"lucida grande",sans-serif;
 	overflow: hidden;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 .projectscontainer{
@@ -338,6 +339,13 @@ ul.social_bar a:hover {
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
+}
+
+.hidethis{
+     opacity:0;
+}
+.showthis{
+     opacity:1;
 }
 
 

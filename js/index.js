@@ -32,3 +32,11 @@ function scrollToTimeline() {
 	    'scrollTop':   $('#aboutme').offset().top
 	}, 700);
 }
+
+
+jQuery(document).ready(function() {
+    jQuery('.introanimation').addClass("hidethis").viewportChecker({
+        classToAdd: 'showthis animated fadeIn',
+        offset: 100
+       });
+});
