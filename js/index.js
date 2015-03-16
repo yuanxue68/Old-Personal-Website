@@ -1,3 +1,15 @@
+$(function() {
+	$.vegas('slideshow', {
+		backgrounds: [
+			{ src: 'images/1.jpg', fade: 2000},
+			{ src: 'images/2.jpg', fade: 2000}
+		],
+		preload: true
+	});
+	$.vegas('overlay', {
+	});
+});
+
 jQuery(document).ready(function($){
 	// browser window scroll (in pixels) after which the "back to top" link is shown
 	var offset = 300,
