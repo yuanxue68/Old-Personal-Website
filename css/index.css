@@ -296,9 +296,9 @@ ul.social_bar a:hover {
   	opacity: 0;
   	left: 0;
   	bottom: -60%;
-  	-webkit-transition: all 0.6s;
-  	-moz-transition:    all 0.6s;
-  	-o-transition:      all 0.6s;
+  	-webkit-transition: all 0.3s;
+  	-moz-transition:    all 0.3s;
+  	-o-transition:      all 0.3s;
 }
 
 .ptitle{
