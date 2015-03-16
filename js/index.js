@@ -66,3 +66,10 @@ jQuery(document).ready(function() {
         offset: 100
        });
 });
+
+jQuery(document).ready(function() {
+    jQuery('.introfade').addClass("hidethis").viewportChecker({
+        classToAdd: 'showthis animated fadeIn',
+        offset: 100
+       });
+});
