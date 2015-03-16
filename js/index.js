@@ -76,6 +76,7 @@ jQuery(document).ready(function() {
 	    });
 
 	   $(".first").addClass("fullscreenheight");
+	   $(".arrow").removeClass("hidethis");
 	}
 });
 
