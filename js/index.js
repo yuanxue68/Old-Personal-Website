@@ -75,7 +75,7 @@ jQuery(document).ready(function() {
 	        $(this).removeClass('zoomin');
 	    });
 
-	   $(".first").removeClass("height: 100vh;");
+	   $(".first").removeClass("fullscreenheight");
 	}
 });
 
