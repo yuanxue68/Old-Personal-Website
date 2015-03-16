@@ -45,8 +45,6 @@ function scrollToTimeline() {
 	}, 700);
 }
 
-if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
-
 jQuery(document).ready(function() {
 	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
 	{
@@ -76,6 +74,8 @@ jQuery(document).ready(function() {
 	    }, function() {
 	        $(this).removeClass('zoomin');
 	    });
+
+	   $(".first").removeClass("height: 100vh;");
 	}
 });
 
