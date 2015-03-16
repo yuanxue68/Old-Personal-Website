@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 });
 
 function scrollToTimeline() {
-	$(document.body).animate({
+	$("html,body").animate({
 	    'scrollTop':   $('#aboutme').offset().top
 	}, 700);
 }
