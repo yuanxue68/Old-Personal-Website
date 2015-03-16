@@ -45,41 +45,57 @@ function scrollToTimeline() {
 	}, 700);
 }
 
+if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
 
 jQuery(document).ready(function() {
-    jQuery('.introup').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated2 fadeInUp',
-        offset: 100
-       });
+	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
+	{
+	    jQuery('.introup').addClass("hidethis").viewportChecker({
+	        classToAdd: 'showthis animated2 fadeInUp',
+	        offset: 100
+	       });
+	}
 });
 
 jQuery(document).ready(function() {
-    jQuery('.introleft').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated2 fadeInLeft',
-        offset: 100
-       });
+	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+	{
+	    jQuery('.introleft').addClass("hidethis").viewportChecker({
+	        classToAdd: 'showthis animated2 fadeInLeft',
+	        offset: 100
+	       });
+	}
 });
 
 jQuery(document).ready(function() {
-    jQuery('.introright').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated2 fadeInRight',
-        offset: 100
-       });
+	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
+	{
+	    jQuery('.introright').addClass("hidethis").viewportChecker({
+	        classToAdd: 'showthis animated2 fadeInRight',
+	        offset: 100
+	       });
+	}
 });
 
 jQuery(document).ready(function() {
-    jQuery('.introfade').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated2 fadeIn',
-        offset: 100
-       });
+	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
+	{
+	    jQuery('.introfade').addClass("hidethis").viewportChecker({
+	        classToAdd: 'showthis animated2 fadeIn',
+	        offset: 100
+	       });
+	}
 });
 
 $(document).ready(function(){
-    $('.project').hover(function() {
-        $(this).addClass('zoomin');
- 
-    }, function() {
-        $(this).removeClass('zoomin');
-    });
+	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
+	{
+	    $('.project').hover(function() {
+	        $(this).addClass('zoomin');
+	 
+	    }, function() {
+	        $(this).removeClass('zoomin');
+	    });
+	}
 });
 
