@@ -296,9 +296,9 @@ ul.social_bar a:hover {
   	opacity: 0;
   	left: 0;
   	bottom: -60%;
-  	-webkit-transition: all 0.3s;
-  	-moz-transition:    all 0.3s;
-  	-o-transition:      all 0.3s;
+  	-webkit-transition: all 0.6s;
+  	-moz-transition:    all 0.6s;
+  	-o-transition:      all 0.6s;
 }
 
 .ptitle{
@@ -344,7 +344,7 @@ ul.social_bar a:hover {
 }
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
+  opacity: .7;
 }
 
 .hidethis{
@@ -352,6 +352,13 @@ ul.social_bar a:hover {
 }
 .showthis{
      opacity:1;
+}
+
+.animated2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 

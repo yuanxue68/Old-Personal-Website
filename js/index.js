@@ -48,28 +48,28 @@ function scrollToTimeline() {
 
 jQuery(document).ready(function() {
     jQuery('.introup').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated fadeInUp',
+        classToAdd: 'showthis animated2 fadeInUp',
         offset: 100
        });
 });
 
 jQuery(document).ready(function() {
     jQuery('.introleft').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated fadeInLeft',
+        classToAdd: 'showthis animated2 fadeInLeft',
         offset: 100
        });
 });
 
 jQuery(document).ready(function() {
     jQuery('.introright').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated fadeInRight',
+        classToAdd: 'showthis animated2 fadeInRight',
         offset: 100
        });
 });
 
 jQuery(document).ready(function() {
     jQuery('.introfade').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated fadeIn',
+        classToAdd: 'showthis animated2 fadeIn',
         offset: 100
        });
 });
