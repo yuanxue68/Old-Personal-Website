@@ -47,8 +47,22 @@ function scrollToTimeline() {
 
 
 jQuery(document).ready(function() {
-    jQuery('.introanimation').addClass("hidethis").viewportChecker({
+    jQuery('.introup').addClass("hidethis").viewportChecker({
         classToAdd: 'showthis animated fadeInUp',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.introleft').addClass("hidethis").viewportChecker({
+        classToAdd: 'showthis animated fadeInLeft',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.introright').addClass("hidethis").viewportChecker({
+        classToAdd: 'showthis animated fadeInRight',
         offset: 100
        });
 });
