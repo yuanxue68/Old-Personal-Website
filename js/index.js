@@ -74,3 +74,12 @@ jQuery(document).ready(function() {
        });
 });
 
+$(document).ready(function(){
+    $('.project').hover(function() {
+        $(this).addClass('zoomin');
+ 
+    }, function() {
+        $(this).removeClass('zoomin');
+    });
+});
+
