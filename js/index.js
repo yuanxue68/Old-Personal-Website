@@ -48,7 +48,7 @@ function scrollToTimeline() {
 
 jQuery(document).ready(function() {
     jQuery('.introanimation').addClass("hidethis").viewportChecker({
-        classToAdd: 'showthis animated fadeIn',
-        offset: 100
+        classToAdd: 'showthis animated fadeInUp',
+        offset: 50
        });
 });
