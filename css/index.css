@@ -90,6 +90,10 @@ body {
 	padding: 40px;
 }
 
+.smalltitle{
+	font-size: 2em;
+}
+
 .expcontainer{
 	max-width:1000px;
 	margin: auto;
