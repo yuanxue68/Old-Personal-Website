@@ -1,8 +1,8 @@
 $(function() {
 	$.vegas('slideshow', {
 		backgrounds: [
-			{ src: 'images/1.jpg', fade: 1500},
-			{ src: 'images/2.jpg', fade: 1500}
+			{ src: 'images/1.jpg', fade: 2000},
+			{ src: 'images/2.jpg', fade: 2000}
 		],
 		preload: true
 	});
