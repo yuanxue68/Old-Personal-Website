@@ -129,6 +129,9 @@ function disableMobileAnim(){
 	   	$(".first").addClass("fullscreenheight");
 	   	$(".title").removeClass("smalltitle");
 	   	$(".arrow").removeClass("hidethis");
+	}else{
+		//remove absolute postion on mobile
+		$("content_container").css("position","relative");
 	}
 };
 
