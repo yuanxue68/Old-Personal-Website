@@ -154,27 +154,6 @@ body {
   height:100%;
   background:#052F59;
 }
-/*.first{
-	display: table;
-	height: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	padding-bottom: 4em;
-	text-align: center;
-
-	background:#b61924;
-}
-canvas{
-	display:block;
-	vertical-align:bottom;
-}
-
-html,body{ 
-  margin:0;
-}
-.fullscreenheight{
-	height: 100vh;
-}*/
 
 .content_container {
 	position: absolute;
@@ -182,19 +161,18 @@ html,body{
 	left: 50%;
 	width: 400px;
   	height: 250px;
-  	margin: -125px 0 0 -200px;
-  	
+  	margin: -125px 0 0 -200px;	
 }
 
 .content{
 	max-width: 480px;
 	padding: 0px 20px;
-	margin: 5% auto 4%;
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
 	border-radius: 15px;
 	text-align: center;
+	background:#052F59;
 }
 
 

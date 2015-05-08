@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	setParticleJS();
 	disableMobileAnim();
 	initScrollTop();
 });
@@ -99,6 +98,7 @@ function initScrollTop(){
 function disableMobileAnim(){
 	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
 	{
+		setParticleJS();
 	    $('.introup').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeInUp',
 	        offset: 100,
