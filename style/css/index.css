@@ -10,7 +10,7 @@ body {
 
 
 .arrow{
- 	background: url('arrow.jpg');
+ 	background: url('../../images/arrow.jpg');
   	background-size: 30px 30px;
   	width: 30px;
   	height: 30px;
@@ -26,7 +26,7 @@ body {
 	text-align: center;
 	padding: 25px;
 	max-height: 150px;
-	background-color:#434242;
+	background-color:#272626;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -150,23 +150,40 @@ body {
 }
 
 /* introduction*/
-.first {
+#particles-js{
+  height:100%;
+  background:#052F59;
+}
+/*.first{
 	display: table;
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 4em;
 	text-align: center;
-	width: 100%;
+
+	background:#b61924;
+}
+canvas{
+	display:block;
+	vertical-align:bottom;
 }
 
+html,body{ 
+  margin:0;
+}
 .fullscreenheight{
 	height: 100vh;
-}
+}*/
 
 .content_container {
-	display: table-cell;
-	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+  	height: 250px;
+  	margin: -125px 0 0 -200px;
+  	
 }
 
 .content{
@@ -176,6 +193,7 @@ body {
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
+	border-radius: 15px;
 	text-align: center;
 }
 
@@ -196,12 +214,12 @@ body {
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('MonoSocialIconsFont-1.10.eot');
-    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -323,7 +341,7 @@ ul.social_bar a:hover {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url("cd-top-arrow.svg") no-repeat center 50%;
+  background: rgba(232, 98, 86, 0.8) url("../../images/cd-top-arrow.svg") no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
