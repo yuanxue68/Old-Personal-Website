@@ -98,7 +98,10 @@ function initScrollTop(){
 function disableMobileAnim(){
 	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
 	{
+		//set up background of particle js
 		setParticleJS();
+
+		//set up other animations
 	    $('.introup').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeInUp',
 	        offset: 100,
@@ -131,10 +134,11 @@ function disableMobileAnim(){
 	   	$(".arrow").removeClass("hidethis");
 	}else{
 		//remove absolute postion on mobile
-		$("content_container").css("position","");
-		$("content_container").css("top","");
-		$("content_container").css("left","");
-		$("content_container").css("width","100%");
+		$(".content_container").css("position","");
+		$(".content_container").css("top","");
+		$(".content_container").css("left","");
+		$(".content_container").css("margin","0");
+		$(".content_container").css("width","100%");
 	}
 };
 
