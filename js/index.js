@@ -131,7 +131,10 @@ function disableMobileAnim(){
 	   	$(".arrow").removeClass("hidethis");
 	}else{
 		//remove absolute postion on mobile
-		$("content_container").css("position","relative");
+		$("content_container").css("position","");
+		$("content_container").css("top","");
+		$("content_container").css("left","");
+		$("content_container").css("width","100%");
 	}
 };
 
