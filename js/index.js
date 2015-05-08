@@ -129,16 +129,13 @@ function disableMobileAnim(){
 	        $(this).removeClass('zoomin');
 	    });
 
-	   	$(".first").addClass("fullscreenheight");
 	   	$(".title").removeClass("smalltitle");
 	   	$(".arrow").removeClass("hidethis");
 	}else{
 		//remove absolute postion on mobile
-		$(".content_container").css("position","");
-		$(".content_container").css("top","");
-		$(".content_container").css("left","");
-		$(".content_container").css("margin","0");
-		$(".content_container").css("width","100%");
+		$("#particles-js").remove();
+	   	$("#intro").removeClass("content_container");
+		$("#intro").addClass("content_container_mobile");
 	}
 };
 

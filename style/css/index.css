@@ -164,7 +164,14 @@ body {
   	margin: -125px 0 0 -200px;	
 }
 
+.content_container_mobile{
+	width:100%;
+	display:block;
+	text-align: center;
+}
+
 .content{
+	margin: auto;
 	max-width: 480px;
 	padding: 0px 20px;
 	border-width: 2px;
