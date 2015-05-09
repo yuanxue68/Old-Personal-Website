@@ -148,10 +148,27 @@ body {
 }
 
 /* introduction*/
-#particles-js{
+canvas {
+	  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+
+  background-color: #052F59;
+  /*background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;*/
+}
+/*#particles-js{
   height:100%;
   background:#052F59;
-}
+}*/
 
 .content_container {
 	position: absolute;

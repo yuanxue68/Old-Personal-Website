@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function setParticleJS(){
 	particlesJS('particles-js', {
-	  particles: {
+	  	particles: {
 	    	color: '#fff',
 	    	color_random: false,
 	    	shape: 'circle', // "circle", "edge" or "triangle"
@@ -35,7 +35,7 @@ function setParticleJS(){
 	    	},
 	    	anim: {
 		      enable: true,
-		      speed: 1
+		      speed: 3
 	    	}
 	  	},
 	  	interactivity: {
