@@ -149,41 +149,23 @@ body {
 }
 
 /* introduction*/
-canvas {
+.first {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 4em;
+	text-align: center;
 	width: 100%;
-  	height: 100%;
-  	display: block;
-  	vertical-align: bottom;
 }
 
-/* ---- particles.js container ---- */
-
-#particles-js {
-
-  background-color: #052F59;
-  /*background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;*/
+.fullscreenheight{
+	height: 100vh;
 }
-/*#particles-js{
-  height:100%;
-  background:#052F59;
-}*/
 
 .content_container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 400px;
-  	height: 250px;
-  	margin: -125px 0 0 -200px;	
-}
-
-.content_container_mobile{
-	width:100%;
-	display:block;
-	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .content{
@@ -195,7 +177,6 @@ canvas {
 	border-color: white;
 	border-radius: 15px;
 	text-align: center;
-	background:#052F59;
 }
 
 
@@ -288,6 +269,7 @@ ul.social_bar a:hover {
 	max-width: 875px;
 }
 
+/*projects*/
 .project{
 	border: 0;
 	display: inline-block;
