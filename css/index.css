@@ -7,8 +7,10 @@ body {
 	text-align: center;
 }
 
+
+
 .arrow{
- 	background: url('../../images/arrow.jpg');
+ 	background: url('arrow.jpg');
   	background-size: 30px 30px;
   	width: 30px;
   	height: 30px;
@@ -24,7 +26,7 @@ body {
 	text-align: center;
 	padding: 25px;
 	max-height: 150px;
-	background-color:#272626;
+	background-color:#434242;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -36,7 +38,7 @@ body {
 
 /* about me */
 .aboutme {
-	background-color:#ECE5C0;
+	background-color:white;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -71,7 +73,7 @@ body {
 /* experience */
 
 .experience{
-	background-color: #49a1a7;
+	background-color: #799EEF;
 	color:#fff;
 	font-family: "Open Sans","Helvetica Neue Thin",HelveticaNeue-Thin,"helvetica neue",helvetica,arial,"lucida grande",sans-serif;
 	margin: 0 auto;
@@ -100,11 +102,10 @@ body {
 
 .workplace:hover{
 	border-radius: 10px;
-	background-color: #799EEF;
+	background-color: #49a1a7;
 	-webkit-transform: translateX(5px);
 	-ms-transform: translateX(5px);
 	transform: translateX(5px);
-	transition-duration: 0.6s;
 }
 
 .companyicon{
@@ -149,53 +150,33 @@ body {
 }
 
 /* introduction*/
-canvas {
+.first {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 4em;
+	text-align: center;
 	width: 100%;
-  	height: 100%;
-  	display: block;
-  	vertical-align: bottom;
 }
 
-/* ---- particles.js container ---- */
-
-#particles-js {
-
-  background-color: #052F59;
-  /*background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;*/
+.fullscreenheight{
+	height: 100vh;
 }
-/*#particles-js{
-  height:100%;
-  background:#052F59;
-}*/
 
 .content_container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 400px;
-  	height: 250px;
-  	margin: -125px 0 0 -200px;	
-}
-
-.content_container_mobile{
-	width:100%;
-	display:block;
-	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .content{
-	margin: auto;
 	max-width: 480px;
 	padding: 0px 20px;
+	margin: 5% auto 4%;
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
-	border-radius: 15px;
 	text-align: center;
-	background:#052F59;
 }
 
 
@@ -215,12 +196,12 @@ canvas {
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
-    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: url('MonoSocialIconsFont-1.10.eot');
+    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -342,7 +323,7 @@ ul.social_bar a:hover {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url("../../images/cd-top-arrow.svg") no-repeat center 50%;
+  background: rgba(232, 98, 86, 0.8) url("cd-top-arrow.svg") no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;

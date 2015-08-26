@@ -10,9 +10,9 @@
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="style/css/index.css"/>
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="style/css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 	<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
@@ -21,27 +21,25 @@
 
 
 
-	<!-- insert canvas of particle js-->
-	<div id="particles-js">
-	</div>
 	<!-- first section with social media-->
-	<div id="intro" class="content_container">
-		<div class="content">
-			<div class="name">Yuan Xue</div>
-			<p class="introduction">Computer Engineer</p>
+	<div class="first">
+		<div class="content_container">
+			<div class="content">
+				<div class="name">Yuan Xue</div>
+				<p class="introduction">Computer Engineer</p>
 
-			<!-- Social Bar -->
-			<ul class="social_bar">
-				<li><a href="https://github.com/yuanxue68" class="symbol" title="Github">circlegithubalt</a></li>
-				<li><a href="https://www.linkedin.com/in/yuanxue" class="symbol" title="LinkedIn">circlelinkedin</a></li>
-				<li><a href="mailto:yuanxue68@gmail.com?subject=Hello!" id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
-				<li><a href="http://www.quora.com/Yuan-Xue-10" class="symbol" title="Quora">circlequora</a></li>
-				<li><a href="https://www.pinterest.com/yuanxue961" class="symbol" title="Pinterest">circlepinterest</a></li>
-			</ul>
+				<!-- Social Bar -->
+				<ul class="social_bar">
+					<li><a href="https://github.com/yuanxue68" class="symbol" title="Github">circlegithubalt</a></li>
+					<li><a href="https://www.linkedin.com/in/yuanxue" class="symbol" title="LinkedIn">circlelinkedin</a></li>
+					<li><a href="mailto:yuanxue68@gmail.com?subject=Hello!" id="popup" class="symbol" title="Contact Me" onclick="show_popup()">circleemail</a></li>
+					<li><a href="http://www.quora.com/Yuan-Xue-10" class="symbol" title="Quora">circlequora</a></li>
+					<li><a href="https://www.pinterest.com/yuanxue961" class="symbol" title="Pinterest">circlepinterest</a></li>
+				</ul>
+			</div>
 		</div>
+		<span onclick="scrollToTimeline()" class="arrow hidethis"></span>
 	</div>
-	<span onclick="scrollToTimeline()" class="arrow hidethis"></span>
-
 	<!-- start about me section -->
 	<div class="aboutme" id="aboutme">
 		<h2 class="title introfade smalltitle">About me</h2>
@@ -191,7 +189,7 @@
 	<!-- include js files -->
 	<script async="" src="//www.google-analytics.com/analytics.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/vegas/jquery.vegas.min.js"></script>
 	<script type="text/javascript" src="js/jquery.viewportchecker.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script>

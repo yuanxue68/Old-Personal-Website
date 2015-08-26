@@ -1,73 +1,16 @@
-$(document).ready(function(){
-	disableMobileAnim();
-	initScrollTop();
+$(function() {
+	$.vegas('slideshow', {
+		backgrounds: [
+			{ src: 'images/1.jpg', fade: 2000},
+			{ src: 'images/2.jpg', fade: 2000}
+		],
+		preload: true
+	});
+	$.vegas('overlay', {
+	});
 });
 
-function setParticleJS(){
-	particlesJS('particles-js', {
-	  	particles: {
-	    	color: '#fff',
-	    	color_random: false,
-	    	shape: 'circle', // "circle", "edge" or "triangle"
-	    	opacity: {
-	      	opacity: 1,
-	      	anim: {
-		        enable: false,
-		        speed: 1.5,
-		        opacity_min: 0,
-		        sync: false
-	      		}
-	    	},
-	    	size: 2.5,
-	    	size_random: true,
-	    	nb: 100,
-	    	line_linked: {
-		    enable_auto: true,
-		    distance: 140,
-		    color: '#fff',
-		    opacity: 1,
-		    width: 1,
-	        condensed_mode: {
-		        enable: false,
-		        rotateX: 600,
-		        rotateY: 600
-	      	}
-	    	},
-	    	anim: {
-		      enable: true,
-		      speed: 3
-	    	}
-	  	},
-	  	interactivity: {
-		    enable: true,
-		    mouse: {
-		      distance: 250
-		    },
-		    detect_on: 'canvas', // "canvas" or "window"
-		    mode: 'grab', // "grab" of false
-		    line_linked: {
-		      opacity: .5
-		    },
-		    events: {
-		      	onclick: {
-			        enable: false,
-			        mode: 'push', // "push" or "remove"
-			        nb: 1
-		      	},
-		      	onresize: {
-			        enable: true,
-			        mode: 'out', // "out" or "bounce"
-			        density_auto: false,
-			        density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
-		      	}
-	    	}
-	  	},
-	  /* Retina Display Support */
-	  	retina_detect: true
-	});
-};
-
-function initScrollTop(){
+jQuery(document).ready(function($){
 	// browser window scroll (in pixels) after which the "back to top" link is shown
 	var offset = 300,
 		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
@@ -93,60 +36,49 @@ function initScrollTop(){
 		 	}, scroll_top_duration
 		);
 	});
-};
 
-function disableMobileAnim(){
+});
+
+function scrollToTimeline() {
+	$("html,body").animate({
+	    'scrollTop':   $('#aboutme').offset().top
+	}, 700);
+}
+
+jQuery(document).ready(function() {
 	if(! /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())) 
 	{
-		//set up background of particle js
-		setParticleJS();
-
-		//set up other animations
-	    $('.introup').addClass("hidethis").viewportChecker({
+	    jQuery('.introup').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeInUp',
-	        offset: 100,
-	    });
+	        offset: 100
+	       });
 
-	    $('.introleft').addClass("hidethis").viewportChecker({
+	     jQuery('.introleft').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeInLeft',
-	        offset: 100,
-	    });
+	        offset: 100
+	       });
 
-	    $('.introright').addClass("hidethis").viewportChecker({
+	     jQuery('.introright').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeInRight',
-	        offset: 100,
-	    });
+	        offset: 100
+	       });
 
-	    $('.introfade').addClass("hidethis").viewportChecker({
+	     jQuery('.introfade').addClass("hidethis").viewportChecker({
 	        classToAdd: 'showthis animated2 fadeIn',
-	        offset: 100,
-	    });
+	        offset: 100
+	       });
 
-	   	$('.project').hover(function() {
+	   $('.project').hover(function() {
 	        $(this).addClass('zoomin');
 	 
 	    }, function() {
 	        $(this).removeClass('zoomin');
 	    });
 
-	   	$(".title").removeClass("smalltitle");
-	   	$(".arrow").removeClass("hidethis");
-	}else{
-		//remove absolute postion on mobile
-		$("#particles-js").remove();
-	   	$("#intro").removeClass("content_container");
-		$("#intro").addClass("content_container_mobile");
+	   $(".first").addClass("fullscreenheight");
+	   $(".title").removeClass("smalltitle");
+	   $(".arrow").removeClass("hidethis");
 	}
-};
-
-//on-click invoked function
-function scrollToTimeline() {
-	$("html,body").animate({
-	    'scrollTop':   $('#aboutme').offset().top
-	}, 700);
-};
-
-
-
+});
 
 
